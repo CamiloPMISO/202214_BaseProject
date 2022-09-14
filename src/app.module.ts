@@ -7,6 +7,7 @@ import { CityEntity } from './city/city.entity';
 import { CityModule } from './city/city.module';
 import { SupermarketEntity } from './supermarket/supermarket.entity';
 import { SupermarketModule } from './supermarket/supermarket.module';
+import { CitySupermarketModule } from './city-supermarket/city-supermarket.module';
 
 @Module({
   imports: [
@@ -19,7 +20,8 @@ import { SupermarketModule } from './supermarket/supermarket.module';
       dropSchema: true,
       synchronize: true,
       keepConnectionAlive: true,
-    }),],
+    }),
+    CitySupermarketModule,],
   controllers: [AppController],
   providers: [AppService],
 })
