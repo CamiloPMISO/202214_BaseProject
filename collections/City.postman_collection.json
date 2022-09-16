@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "b95f7735-dfc1-49ee-9157-7cdd360d0ff8",
+		"_postman_id": "34b7c4cf-2048-4e78-9c7d-e5bf7d88a9c4",
 		"name": "City",
 		"description": "This collection describes the resource Gastronomy in the API Gastronomic Culture",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
@@ -169,8 +169,8 @@
 							]
 						}
 					},
-					"status": "Created",
-					"code": 201,
+					"status": "Precondition Failed",
+					"code": 412,
 					"_postman_previewlanguage": "json",
 					"header": [],
 					"cookie": [],
@@ -233,7 +233,7 @@
 				{
 					"name": "Get all cities",
 					"originalRequest": {
-						"method": "POST",
+						"method": "GET",
 						"header": [
 							{
 								"key": "Accept",
@@ -319,7 +319,7 @@
 				{
 					"name": "Get one city",
 					"originalRequest": {
-						"method": "POST",
+						"method": "GET",
 						"header": [
 							{
 								"key": "Accept",
@@ -411,7 +411,7 @@
 				{
 					"name": "Get an invalid city",
 					"originalRequest": {
-						"method": "POST",
+						"method": "GET",
 						"header": [
 							{
 								"key": "Accept",
@@ -495,7 +495,7 @@
 				{
 					"name": "Update a city",
 					"originalRequest": {
-						"method": "POST",
+						"method": "PUT",
 						"header": [
 							{
 								"key": "Accept",
@@ -504,7 +504,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"name\": \"Buenos aires\",\n    \"country\": \"Argentina\",\n    \"population\": 2890300,\n    \"supermarkets\": []\n}",
+							"raw": "{\n    \"name\": \"Buenos aires\",\n    \"country\": \"Argentina\",\n    \"population\": 2890300\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -561,7 +561,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"name\": \"Buenos aires\",\n    \"country\": \"Argentina\",\n    \"population\": 2890300,\n    \"supermarkets\": []\n}",
+					"raw": "{\n    \"name\": \"Buenos aires\",\n    \"country\": \"Argentina\",\n    \"population\": 2890300\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -584,7 +584,7 @@
 				{
 					"name": "Update an invalid city",
 					"originalRequest": {
-						"method": "POST",
+						"method": "PUT",
 						"header": [
 							{
 								"key": "Accept",
@@ -593,7 +593,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"name\": \"Buenos aires\",\n    \"country\": \"Argentina\",\n    \"population\": 2890300,\n    \"supermarkets\": []\n}",
+							"raw": "{\n    \"name\": \"Buenos aires\",\n    \"country\": \"Argentina\",\n    \"population\": 2890300\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -668,7 +668,7 @@
 				{
 					"name": "Delete a city",
 					"originalRequest": {
-						"method": "POST",
+						"method": "DELETE",
 						"header": [
 							{
 								"key": "Accept",
@@ -757,7 +757,7 @@
 				{
 					"name": "Delete an invalid city",
 					"originalRequest": {
-						"method": "POST",
+						"method": "DELETE",
 						"header": [
 							{
 								"key": "Accept",

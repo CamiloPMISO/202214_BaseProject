@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "731b8a9b-702b-446d-836b-29c1835b0420",
+		"_postman_id": "f102817a-5135-409c-b187-53386623e8ec",
 		"name": "Supermarket",
 		"description": "This collection describes the resource Gastronomy in the API Gastronomic Culture",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
@@ -169,8 +169,8 @@
 							]
 						}
 					},
-					"status": "Created",
-					"code": 201,
+					"status": "Precondition Failed",
+					"code": 412,
 					"_postman_previewlanguage": "json",
 					"header": [],
 					"cookie": [],
@@ -233,7 +233,7 @@
 				{
 					"name": "Get all supermarkets",
 					"originalRequest": {
-						"method": "POST",
+						"method": "GET",
 						"header": [
 							{
 								"key": "Accept",
@@ -319,7 +319,7 @@
 				{
 					"name": "Get one supermarket",
 					"originalRequest": {
-						"method": "POST",
+						"method": "GET",
 						"header": [
 							{
 								"key": "Accept",
@@ -411,7 +411,7 @@
 				{
 					"name": "Get an invalid supermarket",
 					"originalRequest": {
-						"method": "POST",
+						"method": "GET",
 						"header": [
 							{
 								"key": "Accept",
@@ -495,7 +495,7 @@
 				{
 					"name": "Update a supermarket",
 					"originalRequest": {
-						"method": "POST",
+						"method": "PUT",
 						"header": [
 							{
 								"key": "Accept",
@@ -584,7 +584,7 @@
 				{
 					"name": "Update an invalid supermarket",
 					"originalRequest": {
-						"method": "POST",
+						"method": "PUT",
 						"header": [
 							{
 								"key": "Accept",
@@ -593,7 +593,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"name\": \"Buenos aires\",\n    \"country\": \"Argentina\",\n    \"population\": 2890300,\n    \"supermarkets\": []\n}",
+							"raw": "{\n    \"name\": \"supermercado coratiendas\",  \n    \"lng\": 34,\n    \"lat\": 59,\n    \"url\": \"www.coratiendas.com\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -668,7 +668,7 @@
 				{
 					"name": "Delete a supermarket",
 					"originalRequest": {
-						"method": "POST",
+						"method": "DELETE",
 						"header": [
 							{
 								"key": "Accept",
@@ -757,7 +757,7 @@
 				{
 					"name": "Delete an invalid supermarket",
 					"originalRequest": {
-						"method": "POST",
+						"method": "DELETE",
 						"header": [
 							{
 								"key": "Accept",

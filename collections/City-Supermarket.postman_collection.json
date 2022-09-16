@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "5af96608-1c2f-4390-b6a3-0e088210ac37",
+		"_postman_id": "11b24b0b-47df-48b2-8807-88031d05bb6f",
 		"name": "City-Supermarket",
 		"description": "This collection describes the resource Gastronomy in the API Gastronomic Culture",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
@@ -239,7 +239,7 @@
 				{
 					"name": "Get all supermarkets of a city",
 					"originalRequest": {
-						"method": "POST",
+						"method": "GET",
 						"header": [
 							{
 								"key": "Accept",
@@ -329,7 +329,7 @@
 				{
 					"name": "Get a supermarket of a city",
 					"originalRequest": {
-						"method": "POST",
+						"method": "GET",
 						"header": [
 							{
 								"key": "Accept",
@@ -425,7 +425,7 @@
 				{
 					"name": "Get a supermarket of a non-associated city",
 					"originalRequest": {
-						"method": "POST",
+						"method": "GET",
 						"header": [
 							{
 								"key": "Accept",
@@ -512,7 +512,7 @@
 				{
 					"name": "Update supermarkets of a city",
 					"originalRequest": {
-						"method": "POST",
+						"method": "PUT",
 						"header": [
 							{
 								"key": "Accept",
@@ -603,7 +603,7 @@
 				{
 					"name": "Update invalid supermarkets of a city",
 					"originalRequest": {
-						"method": "POST",
+						"method": "PUT",
 						"header": [
 							{
 								"key": "Accept",
@@ -690,7 +690,7 @@
 				{
 					"name": "Delete a supermarket of a city",
 					"originalRequest": {
-						"method": "POST",
+						"method": "DELETE",
 						"header": [
 							{
 								"key": "Accept",
